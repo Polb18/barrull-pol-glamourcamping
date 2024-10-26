@@ -14,6 +14,5 @@ Configurar un entorn de desenvolupament utilitzant GitHub Codespaces i començar
 - Tasca 4.Comprovació i Confirmació de Canvis
 - Tasca 5.Documentació i Informes
 
- ##Historia 2
-
+## Historia 2
  
