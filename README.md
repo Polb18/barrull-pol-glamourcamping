@@ -11,5 +11,9 @@ Configurar un entorn de desenvolupament utilitzant GitHub Codespaces i començar
 - Tasca 1.Configuració de GitHub Codespaces:
 - Tasca 2.Creació del Repositori i Configuració Inicial
 - Tasca 3.Desenvolupament:
-- Tasca 4.Comprovació i Confirmació de Canvis:
-- Tasca 5.Documentació i Informes:
+- Tasca 4.Comprovació i Confirmació de Canvis
+- Tasca 5.Documentació i Informes
+
+ ##Historia 2
+
+ 
