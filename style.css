@@ -1,22 +1,22 @@
-body{
-    color: 2D2D2D;
-    font-family: "Inter" , sans-serif
+body {
+    color: #2D2D2D; /* Agregado el símbolo '#' para el color hexadecimal */
+    font-family: "Inter", sans-serif; /* Agregado el punto y coma al final */
     font-weight: 100;
     font-optical-sizing: auto;
     font-synthesis: none;
 }
 
-.titolArticle{
+.titolArticle {
     color: #345E40;
-    margin-bottom: 2px solid #97A483;
+    margin-bottom: 2px; /* Eliminado 'solid #97A483', ya que no es válido en margin */
     text-align: center;
     padding-top: 10px;
     border-bottom: 2px solid #97A483;
 }
 
-.citas{
+.citas {
     background-color: #f7f2db;
-    border-bottom: 2px solid #97A48388;
+    border-bottom: 2px solid #97A48388; /* Este color es válido como RGBA hexadecimal */
     border-radius: 10px;
     padding: 20px;
 }

@@ -1,173 +1,406 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="index.css">
+        <title>Glamour Camping</title>
+        
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glamour Camping</title>
-    <style>
-        header,
-        main,
-        footer {
-            background-color: aquamarine;
-            padding: 10px;
-        }
-
-        div {
-            border: 1px solid grey;
-            padding: 10px;
-        }
-
-        #cards {
-            background-color: #123456;
-        }
-
-        .targetes {
-            background-color: rgb(120, 200, 12, 0.5);
-        }
-
-        section {
-            background-color: cornflowerblue;
-            padding: 10px;
-        }
-
-        article {
-            background-color: blue;
-            padding: 10px;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h1>Pàgina home</h1>
-        <nav>
-            <a href="">Index</a>
-            <a href="articles/article1.html">article1</a>
-            <a href="articles/article2.html">article2</a>
-            <a href="articles/article3.html">article3</a>
-        </nav>
-    </header>
-
-    <main>
-        <section id="about">
-            <h1>ABOUT</h1>
-
-            <h2>Welcome to Glamour Camping Ground</h2>
-
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta sunt nulla dolore et voluptatem vitae est
-                libero
-                vero aut provident. Eligendi suscipit ad laborum quaerat quo facere nesciunt eum dicta!
-            </p>
-
-            <div id="iconos">
-
-                <div id="autocaravana">
-                    <img src="imagenes/caravana.png" alt="icono autocaravana">
-                    <p>30 CAMPER SITES</p>
+    <body>
+        <!-- CABECERA -->
+        <header>
+            <!-- MENU -->
+            <div id="cabecera">
+                <div class="logo">
+                    <img src="imagenes/logo.png" alt="logo">
                 </div>
 
-                <div id="remolque">
-                    <img src="imagenes/remolque.png" alt="icono remolque">
-                    <p>25 CARAVAN SITES</p>
-                </div>
+                <div id="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Campground</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
 
-                <div id="tiendadecampaña">
-                    <img src="imagenes/tiendadecampaña.png" alt="icono tienda de campaña">
-                </div>
+                    <button>
+                        <a href=""> BOOK </a> 
+                    </button>
+                </div> 
             </div>
 
-            <div id="cards">
-                <div class="targetes">
-                    <img src="imagenes/tiendaquechua.png" alt="tienda de capaña al aire libre">
+            <!-- SLIDER -->
+            <div id="anuncio">
+                <div id="anuncio_cont">
+                    <div id="flechadere" class="flecha">
+                        <img src="imagenes/flecha.png" alt="flecha>
+                    </div> 
+                    
+                    <div id="anuncio">
+                        <p>Let’s Make S’more Memories </p>
+                        <h4>CAMP IS MORE <br> THAN JUST A WORLD, IT'S AN EXPERIENCE!</h4>
+                        <div class="video">
+                            <div id="botonplay">
+                                <a href="#">
+                                    <img src="imagenes/botonplay.png" alt="botonplay">
+                                </a>
+                            </div>
+                            <a href="">Watch This Video</a>
+                        </div>
+                    </div>
+                </div>
 
-                    <h2>Camping area for tents</h2>
+                <div id="flechaiz" class="flecha">
+                    <img src="imagenes/flechaiz.png" alt="flechaiz">
+                </div>      
+            </div>
+        </header>
+        <!-- FORMULARIO -->
+         <div id="FORMULARIO">
+            <form id="formulario" action="">
+                <!-- calendario llegada-->
+                <div class="contenedor_formulario">
+                    <div>
+                        <img src="imagenes/logocalendario.png" alt="logocalendario">
+                        <label for="checkin"> CHECK IN</label>
+                    </div>
+                    <input type="date" name="Checkin" id="checkin">
+                    <hr>
+                </div>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, sed molestias? Eligendi,
-                        molestias!
-                        Soluta, possimus maiores itaque animi recusandae, mollitia neque a dignissimos rerum asperiores
-                        ab
-                        consectetur ad alias harum!
-                    </p>
+                <!-- -->
+                <div class="contenedor_formulario">
+                    <div>
+                        <img src="imagenes/logocalendario.png" alt="logocalendario">
+                        <label for="checkout"> CHECK OUT</label>
+                    </div>
+                    <input type="date" name="Checkout" id="checkout">
+                    <hr>
+                </div class="contenedor_formulario">
 
-                    <img src="imagenes/caravabosque.png" alt="caravana en el bosque">
+                <div class="contenedor_formulario">
+                    <div>
+                        <img src="imagenes/personalogo.png" alt="personalogo">
+                        <label for="personas"> GUESTS</label>
+                    </div>
+                    <input type="number" name="Personas" id="personas" min="1">
+                    <hr>
+                </div>
 
-                    <h2>Trailers and RV spots</h2>
+                <div class="contenedor_formulario">
+                    <div>
+                        <img src="imagenes/logotienda.png" alt="logotienda">
+                        <label for="estancia">ACCOMMODATION</label>
+                    </div>
+                    <select name="Estancia" id="accommodation">
+                        <option value="">selecciona</option>
+                        <option value="TENT ">tent</option>
+                        <option value="CAMPER ">camper</option>
+                        <option value="CARAVANA">caravana</option>
+                        <option value="GLAMP ">glamp</option>
+                        <option value="CABINHOUSES">cabin Houses</option>
+                    </select>
+                    <hr>
+                </div>
+                <div>
+                    <button type="submit"> BOOK NOW </button>
+                </div>
+            </form>
+         </div>
+        <!--CONTENIDO WEB -->
+        <main>
+                <section id="about">
+                    <p> ABOUT </p>
+                </section>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos et enim, modi architecto
-                        blanditiis
-                        optio, recusandae sequi, quis at qui aliquam quo possimus ratione iste nesciunt. Quos reiciendis
-                        repellendus eaque!
-                    </p>
+                <section id="activity">
+                    <div id="activitycont">
+                        <h2>Welcome To Glamour Camping Ground</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas nisi nec libero fermentum, a varius tortor venenatis. Sed vitae dolor interdum, semper leo at, tristique nisl. Maecenas vitae luctus tortor, vel efficitur sem. Maecenas tincidunt sem nec magna gravida varius. Aliquam nec ligula a augue congue condimentum. Pellentesque eget lorem euismod, viverra nisl in, viverra velit. </p>
+                    </div>
 
-                    <img src="imagenes/hausechill.png" alt="hausechill">
+                    <div id="iconos">
+                        
+                        <div id="autocaravana" class="card">
+                            <img src="imagenes/caravana.png" alt="caravana">
+                            <p>30 CAMPER SITES</p>
+                        </div>
+                        <hr>
 
-                    <h2>Cabins and glamping</h2>
+                        <div id="remolque" class="card">
+                            <img src="imagenes/remolque.png" alt="remolque">
+                            <p>25 CARAVANA</p>
+                        </div>
+                        <hr>
 
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus incidunt nisi molestiae
-                        dolor
-                        voluptatum in recusandae, esse consequatur quo voluptate vel minima velit necessitatibus
-                        cupiditate
-                        cumque, hic ullam, libero accusamus.
-                    </p>
+                        <div id="tiendadecampaña" class="card">
+                            <img src="imagenes/tiendadecampaña.png" alt="tiendadecampaña">
+                            <p>50 TENT SITES</p>
+                        </div>
+                        <hr>
+
+                        <div id="campañagrande" class="card">
+                            <img src="imagenes/campañagrande.png" alt="campañagrande">
+                            <p>10 GLAMP SITES</p>
+                        </div>
+                        <hr>
+
+                        <div id="houses" class="card">
+                            <img src="imagenes/houses.png" alt="houses">
+                            <p>10 CABIN HOUSES</p>
+                        </div>
+                    </div>
+
+                    <!-- INFORMACION DE LAS ACTIVIDADES -->
+                    <div id="cards2">
+                        <div id="campingarea">
+                            <img src="imagenes/tiendaquechua.png" alt="tiendaquechua">
+                            <h2>Camping area for tents</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas nisi nec libero fermentum, a varius tortor venenatis. Sed vitae dolor interdum.</p>
+                        </div>
+
+                        <div id="rv">
+                            <img src="imagenes/caravabosque.png" alt="caravabosque">
+                            <h2>Trailers And RV Spots</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas nisi nec libero fermentum, a varius tortor venenatis. Sed vitae dolor interdum.</p>
+                        </div>
+
+                        <div id="hausechill">
+                            <img src="imagenes/hausechill.png" alt="hausechill">
+                            <h2>Cabins and glamping</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas nisi nec libero fermentum, a varius tortor venenatis. Sed vitae dolor interdum.</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                    <div id="activity2">
+                        <div id="activityprincipal">
+                            <p>ACTIVITY</p>
+                            <h1> Camp Will Be For You <br> What You Want It To Be. </h1>
+                            <div id="Activitylogoprinci">
+                                <img src="imagenes/activitylogo.png" alt="activitylogo">
+                            </div>    
+                        </div>
+                        <div id="simbolosactivity">
+                            <div id="simbolosactivity2">
+                                <div id="Everest">
+                                    <img src="imagenes/Everest.png" alt="Everest">
+                                    <h1>Wild Life</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas nisi nec libero fermentum.</p>
+                                </div>
+                                <div id="fuegonube">
+                                    <img src="imagenes/fuegonube.png" alt="fuegonube">
+                                    <h1>Bonfire</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas nisi nec libero fermentum.</p>
+                                </div>
+                            </div>
+
+                            <div id="simbolosactivity3">
+                                <div id="kayak">
+                                    <img src="imagenes/kayak.png" alt="kayak">
+                                    <h1>Canoeing</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas nisi nec libero fermentum.</p>
+                                </div>
+                                <div id="hiking">
+                                    <img src="imagenes/hiking.png" alt="hiking">
+                                    <h1>Hiking</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas nisi nec libero fermentum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div id="fogata">
+                        <p>A Bonfire Is Basically Just A <br> Nightclub In The Mountains</p>
+                        <button> <a href=""> CHECK AVAILABILITY </a> </button>
+                    </div>
+                </section>
+
+                <!-- APARTAMENTOS -->
+                <section>
+                    <div id="booking">
+                        <p>BOOKING</p>
+                        <h1>Book Your Dream <br> Vacation Now</h1>
+                    </div>
+
+                    <div>
+                        <div class="articulos_booking">
+                            <div id="tiendamadera">
+                                <img src="imagenes/tiendamadera.png" alt="tiendamadera">
+                                <div class="title_persons">    
+                                    <h2>Bell Glamp One</h2>
+                                    <div>
+                                        <p> 1-6 persons </p>
+                                        <hr>
+                                        <p> 25m21 </p>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ipsum volutpat, maximus lorem sit amet, ullamcorper odio. Vivamus eu ultrices lorem, sed blandit magna. Nullam feugiat quam quis venenatis blandit. </p>
+                                <button><a href=""> CHECK AVAILABILITY </a></button>
+                            </div>
+
+                            <div id="caravanasoler">
+                                <img src="imagenes/caravansoler.png" alt="caravansoler">
+                                <div class="title_persons">
+                                    <h2>Caravan soler tent</h2>
+                                    <div>
+                                        <p>2-6 persons</p>
+                                        <hr>
+                                        <p>27m</p>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ipsum volutpat, maximus lorem sit amet, ullamcorper odio. Vivamus eu ultrices lorem, sed blandit magna. Nullam feugiat quam quis venenatis blandit. </p>
+                                <button><a href=""> CHECK AVAILABILITY </a></button>
+                            </div>
+                        </div>
+
+
+                        <div class="articulos_booking">
+                            <div id="tendasoler">
+                                <img src="imagenes/tendasoler.png" alt="tendasoler">
+                                <div class="title_persons">
+                                    <h2>Glammping Tent</h2>
+                                    <div>
+                                        <p>1-6 persons</p>
+                                        <hr>
+                                        <p>17m2</p>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ipsum volutpat, maximus lorem sit amet, ullamcorper odio. Vivamus eu ultrices lorem, sed blandit magna. Nullam feugiat quam quis venenatis blandit. </p>
+                                <button><a href=""> CHECK AVAILABILITY </a></button>
+                            </div>
+
+                            <div id="cabinwood">
+                                <img src="imagenes/cabinwood.png" alt="cabinwood">
+                                <div class="title_persons">
+                                    <h2>Small Cabin Wood</h2>
+                                    <div>
+                                        <p>1-6 persons</p>
+                                        <hr>
+                                        <p>25m21</p>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ipsum volutpat, maximus lorem sit amet, ullamcorper odio. Vivamus eu ultrices lorem, sed blandit magna. Nullam feugiat quam quis venenatis blandit. </p>
+                                <button><a href=""> CHECK AVAILABILITY </a></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section id="news">
+                        <p> News </p>
+                        <div id="lastestart">
+                            <h2>Lastest Articles</h2>
+                            <button id="noticiasNews"> explore </button>
+                        </div>
+                        <div id="noticias">
+                            <div id="noticia1" class="new">
+                               
+                                    <img class="imgDetalle" id="1" src="imagenes/tiendanoche.png" alt="tiendanoche"> 
+                             
+                                <p class="tituloNoticia"> <strong> Sed nec lorem scelerisque, viverra ex ut, interdum massa.</strong></p>
+                                <p class="noticia" id="1"> Read </p>
+                            </div>
+
+                            <div id="noticia2" class="new">
+                                
+                                    <img class="imgDetalle" id="2" src="imagenes/tiendacapsula.png" alt="tiendacapsula">
+                            
+                                <p class="tituloNoticia"> <strong> Sed nec lorem scelerisque, viverra ex ut, interdum massa.</strong></p>
+                                <p class="noticia" id="2"> Read </p>
+                            </div>
+
+                            <div id="noticia3" class="new">
+                                
+                                    <img class="imgDetalle" id="3" src="imagenes/tiendaluz.png" alt="tiendaluz"> 
+                        
+                                <p class="tituloNoticia"> <strong> Sed nec lorem scelerisque, viverra ex ut, interdum massa.</strong></p>
+                                <p class="noticia" id="3"> Read </p>
+                            </div>
+                        </div>
+                </section>
+                <section id="gallery">
+                    <div>
+                        <h1>Our Gallery</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus erat a consectetur sollicitudin. In id dapibus lorem.</p>
+                        <div id="galleryflechas">
+                            <div id="galleryflechasizqui" class="botones_gallery">
+                                <button>  <a href="#"> <img src="imagenes/flechaiz.png" alt="flechaiz"> </a> </button>
+                            </div>
+                            <div id="galleryflechasdere" class="botones_gallery">
+                                <button>  <a href="#"> <img src="imagenes/flechadere.png" alt="flechadere"> </a> </button> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tiendafinal">
+                       <img src="imagenes/tiendafinal.png" alt="tiendafinal">
+                    </div>
+
+                    <div id="casamaderafinal">
+                        <img src="imagenes/casamaderafinal.png" alt="casamaderafinal">
+                    </div>
+                </section>
+        </main>
+
+        <footer>
+            <div>
+                <div id="footersucribete">
+                    <h1>Subscribe to our newletter</h1>
+                    <form id="formuariofooter" method="post" action="prueba.php">
+                        <div>
+                            <input type="email" placeholder="enter you email address">
+                            <a href="">subscribe <img src="imagenes/flechadere.png" alt="flechadere"></a>
+                        </div>
+                        <hr>
+                    </form>
+                    <p>Copyright: Pol Barrull</p>
+                </div>
+    
+                <div id="FooterDerecha">
+                    <div id="Menufooter">
+                        <nav>
+                            <h4>Sitemap</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Campground</a></li>
+                                <li><a href="">News</a></li>
+                            </ul>
+                        </nav>
+                        <div id="flechaup">
+                            <a href="#cabecera"><img src="imagenes/flechaup.png" alt="flechaup"></a>
+                        </div>
+                    </div>
+    
+                    <div id="Contacto">
+                        <h4>Contact</h4>
+                        <a href=""><p>Dotcreativemarket.com</p></a>
+                        <a href="mailto:info@dotcreativemarket.com"><p>info@dotcreativemarket.com</p></a>
+                    </div>
+    
+                    <div id="logosredes">
+                        <a href=""><img src="imagenes/twitter.png" alt="twitter"></a>
+                        <a href=""><img src="imagenes/ig.png" alt="ig"></a>
+                        <a href=""><img src="imagenes/tiktok.png" alt="tiktok"></a>
+                        <a href=""><img src="imagenes/puntos.png" alt="puntos"></a>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section id="activity">
+        </footer>
 
-            <h2>ACTIVITY</h2>
-
-            <p>A bonfire is basically Just a Nightclub In the Mountains</p>
-
-        </section>
-        <section id="action">
-
-        </section>
-        <section id="booking">
-
-            <h2>BOOKING</h2>
-
-            <p>Book Your Dram Vacation Now</p>
-
-            <img src="imagenes/caravansoler.png" alt="caravansoler">
-
-            <h3>Caravan Soler Tent</h3>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quisquam veritatis natus quasi accusamus
-                ut quis recusandae mollitia cupiditate consequatur illo maiores, quas quam fugit neque tenetur,
-                doloribus autem explicabo?
-            </p>
-
-            <img src="imagenes/tendasoler.png" alt="tendasoler">
-
-            <h2>Glamping Tent</h2>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maecenas eu ipsum volupat, maximus lorem sit
-                amet, ullamcorper odio. Vivamus eu ultrices lorem, sed blandit magna. Nullam feugiat queam quis
-                venenatis blandit.
-            </p>
-
-            <img src="imagenes/cabinwood.png" alt="cabinwood">
-
-            <h2>Small Cabin Wood</h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ipsum volupat, maximus lorem sit
-                amet, ullamcorper odio. Vivamus eu ultrices lorem, sed blandit magna. Nullam feugiat quam quis venenatis
-                blandit.</p>
-        </section>
-        <section id="news">
-
-        </section>
-        <section id="gallery">
-
-        </section>
-    </main>
-
-    <footer>
-        Subscribe to our newletter
-        Pàgina creada per: Pol Barrull
-    </footer>
-</body>
-
+    </body>
+    <script src="index.js"></script>
 </html>
