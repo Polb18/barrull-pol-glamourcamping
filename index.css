@@ -1,14 +1,15 @@
 /* Configuración global */
 * {
-    box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño total del elemento */
-    font-family: "Inter", serif; /* Fuente predeterminada */
-    margin: 0; /* Elimina márgenes predeterminados */
+    box-sizing: border-box; /* Asegura que el padding y el borde no afecten el tamaño total del elemento */
+    font-family: "Inter", serif; /* Establece la fuente predeterminada */
+    margin: 0; /* Elimina los márgenes predeterminados */
 }
 
+/* Estilo del cuerpo de la página */
 body {
-    color: #2D2D2D; /* Color de texto principal */
-    font-family: "Inter", sans-serif; /* Fuente del cuerpo */
-    font-weight: 300; /* Peso de la fuente */
+    color: #2D2D2D; /* Color del texto principal */
+    font-family: "Inter", sans-serif; /* Fuente del texto */
+    font-weight: 300; /* Hace que el texto sea delgado */
     height: 208px; /* Altura del cuerpo */
     width: 1897px; /* Ancho del cuerpo */
     max-height: 208px; /* Altura máxima */
@@ -18,148 +19,150 @@ body {
 
 /* Estilo para enlaces */
 a {
-    font-size: 16px; /* Tamaño de fuente para enlaces */
+    font-size: 16px; /* Tamaño de la fuente de los enlaces */
 }
 
-/* Estilo para el encabezado */
+/* Estilo del encabezado */
 header {
-    background-image: url(imagenes/fotoprincipal.png); /* Imagen de fondo */
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 925px;
-    width: 1920px;
-    max-height: 925px;
-    max-width: 1920px;
+    background-image: url(imagenes/fotoprincipal.png); /* Imagen de fondo del encabezado */
+    background-size: contain; /* Ajusta la imagen para que se ajuste al contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 925px; /* Altura del encabezado */
+    width: 1920px; /* Ancho del encabezado */
+    max-height: 925px; /* Altura máxima */
+    max-width: 1920px; /* Ancho máximo */
 }
 
 /* Contenedor principal del encabezado */
 #cabecera {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Usa un diseño flexible para alinear elementos */
+    justify-content: space-between; /* Espacia los elementos uniformemente */
+    align-items: center; /* Alinea los elementos verticalmente */
 }
 
 /* Logo del encabezado */
 .logo {
-    width: 152.13px;
-    max-width: 152.13px;
-    height: 110px;
-    max-height: 110px;
-    margin-top: 31px;
-    margin-left: 114px;
+    width: 152.13px; /* Ancho del logo */
+    max-width: 152.13px; /* Ancho máximo del logo */
+    height: 110px; /* Altura del logo */
+    max-height: 110px; /* Altura máxima del logo */
+    margin-top: 31px; /* Espacio superior del logo */
+    margin-left: 114px; /* Espacio izquierdo del logo */
 }
 
 /* Menú principal */
 header #menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 114px;
+    display: flex; /* Usa un diseño flexible para el menú */
+    justify-content: center; /* Centra los elementos del menú */
+    align-items: center; /* Alinea los elementos verticalmente */
+    margin-right: 114px; /* Espacio derecho del menú */
 }
 
 #menu > nav > ul {
-    width: 396px;
-    max-width: 396px;
-    height: 32px;
-    max-height: 32px;
-    margin-top: 71px;
-    left: 1212px;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 396px; /* Ancho del contenedor de la lista */
+    max-width: 396px; /* Ancho máximo */
+    height: 32px; /* Altura del contenedor */
+    max-height: 32px; /* Altura máxima */
+    margin-top: 71px; /* Espacio superior */
+    left: 1212px; /* Posición desde la izquierda */
+    padding: 0; /* Elimina el padding */
+    display: flex; /* Usa un diseño flexible */
+    justify-content: space-between; /* Espacia los elementos uniformemente */
+    align-items: center; /* Alinea los elementos verticalmente */
 }
 
 #menu > nav > ul > li {
-    list-style: none;
+    list-style: none; /* Elimina los puntos de la lista */
 }
 
 #menu > nav > ul > li > a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: 500;
-    line-height: 32px;
+    color: #FFFFFF; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: 500; /* Grosor del texto */
+    line-height: 32px; /* Altura de línea */
 }
 
 /* Botón del menú principal */
 button > a {
-    text-decoration: none;
+    text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
 #menu > button {
-    transition: cursor 3s ease;
-    width: 151px;
-    max-width: 151px;
-    height: 50px;
-    max-height: 50px;
-    border: 2px solid #FFFFFF;
-    border-radius: 10px;
-    margin-top: 71px;
-    left: 1655px;
-    margin-left: 49.5px;
-    background-color: transparent;
+    transition: cursor 3s ease; /* Transición suave para el cursor */
+    width: 151px; /* Ancho del botón */
+    max-width: 151px; /* Ancho máximo */
+    height: 50px; /* Altura del botón */
+    max-height: 50px; /* Altura máxima */
+    border: 2px solid #FFFFFF; /* Borde blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 71px; /* Espacio superior */
+    left: 1655px; /* Posición desde la izquierda */
+    margin-left: 49.5px; /* Espacio izquierdo */
+    background-color: transparent; /* Fondo transparente */
 }
 
 #menu > button:hover {
-    cursor: pointer;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
 #menu > button > a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16.94px;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #FFFFFF; /* Color del texto */
+    font-weight: 700; /* Grosor del texto */
+    font-size: 14px; /* Tamaño del texto */
+    line-height: 16.94px; /* Altura de línea */
 }
 
 /* Sección de anuncio */
 #anuncio {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Usa un diseño flexible */
+    justify-content: space-between; /* Espacia los elementos uniformemente */
 }
 
 #anuncio_cont {
-    display: flex;
+    display: flex; /* Usa un diseño flexible */
 }
 
 /* Flechas de navegación */
 .flecha {
-    transition: cursor 3s ease;
-    height: 40px;
-    max-height: 40px;
-    width: 40px;
-    max-width: 40px;
-    margin-top: 320px;
-    border: 1px solid #FFFFFF;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    transition: cursor 3s ease; /* Transición suave para el cursor */
+    height: 40px; /* Altura de la flecha */
+    max-height: 40px; /* Altura máxima */
+    width: 40px; /* Ancho de la flecha */
+    max-width: 40px; /* Ancho máximo */
+    margin-top: 320px; /* Espacio superior */
+    border: 1px solid #FFFFFF; /* Borde blanco */
+    border-radius: 100%; /* Forma redonda */
+    display: flex; /* Usa un diseño flexible */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
 }
 
 .flecha:hover {
-    cursor: pointer;
+    cursor: pointer; /* Cambia el cursor al pasar sobre la flecha */
 }
 
 #flechadere {
-    margin-left: 110px;
-    opacity: 30%;
+    margin-left: 110px; /* Espacio izquierdo */
+    opacity: 100%; /* Hace que la flecha sea completamente visible */
+    color: #FFFFFF; /* Color blanco */
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); /* Añade sombra para mejor visibilidad */
 }
 
 #flechaiz {
-    margin-right: 110px;
+    margin-right: 110px; /* Espacio derecho */
 }
 
 /* Texto del anuncio */
 #anuncio > p {
-    color: #FFFFFF;
-    max-width: 323px;
-    max-height: 32px;
-    margin-top: 156px;
-    margin-left: 60px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 25px;
+    color: #FFFFFF; /* Color del texto */
+    max-width: 323px; /* Ancho máximo */
+    max-height: 32px; /* Altura máxima */
+    margin-top: 156px; /* Espacio superior */
+    margin-left: 60px; /* Espacio izquierdo */
+    font-weight: 500; /* Grosor del texto */
+    font-size: 16px; /* Tamaño del texto */
+    line-height: 25px; /* Altura de línea */
 }
 
 #anuncio h4 {
@@ -214,7 +217,6 @@ button > a {
     font-weight: 500;
     font-size: 16px;
     line-height: 25px;
-    margin-top: 5px;
 }
 
 /* Contenido principal */
@@ -249,6 +251,17 @@ main {
 #accommodation {
     display: flex;
     justify-content: space-between;
+}
+
+#accommodation > p {
+    color: #FFFFFF;
+    max-width: 323px;
+    max-height: 32px;
+    margin-top: 156px;
+    margin-left: 60px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
 }
 
 #activitycont > h2 {
@@ -602,7 +615,7 @@ main {
     max-width: 1920px;
     height: 701px;
     max-height: 701px;
-    background-image: url(imagenes/masmello.png);
+    background-image: url(imagenes/fogata.png);
     margin-top: 64px;
     position: relative;
 }
@@ -682,10 +695,17 @@ main {
     margin-left: 638px;
 }
 
+/* Ajustar la separación entre las imágenes del apartado Booking */
 .articulos_booking {
     display: flex;
+    flex-wrap: wrap; /* Permitir que las imágenes se organicen en filas */
+    gap: 20px; /* Espaciado entre las imágenes */
     margin-top: 86px;
     margin-left: 210px;
+}
+
+.articulos_booking > div {
+    margin-bottom: 20px; /* Espaciado vertical entre filas */
 }
 
 #Caravan_soler_tent,
@@ -851,6 +871,153 @@ main {
     cursor: pointer;
 }
 
+/* Sección de noticias */
+#noticias {
+    margin-top: 48.79px; /* Espacio superior para la sección de noticias */
+    display: flex; /* Coloca las noticias en fila */
+}
+
+#noticia1 {
+    margin-left: 210.14px; /* Espacio a la izquierda de la primera noticia */
+}
+
+#noticia2,
+#noticia3 {
+    margin-left: 39.39px; /* Espacio entre la segunda y tercera noticia */
+}
+
+/* Imágenes de las noticias */
+.new img {
+    width: 473.36px; /* Ancho de las imágenes de las noticias */
+    max-width: 473.36px; /* Ancho máximo */
+    height: 286.41px; /* Altura de las imágenes */
+    max-height: 286.41px; /* Altura máxima */
+    display: block; /* Asegura que las imágenes se muestren correctamente */
+    max-width: 100%; /* Ajusta el tamaño al contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    z-index: 1; /* Asegura que las imágenes estén por encima de otros elementos */
+}
+
+/* Texto de las noticias */
+.new p {
+    width: 453px; /* Ancho del texto */
+    max-width: 453px; /* Ancho máximo */
+    height: 104px; /* Altura del texto */
+    max-height: 104px; /* Altura máxima */
+    font-weight: 700; /* Grosor del texto */
+    font-size: 24px; /* Tamaño del texto */
+    line-height: 32px; /* Altura de línea */
+    text-align: justify; /* Justifica el texto */
+    color: #2D2D2D; /* Color del texto */
+    margin-top: 43.8px; /* Espacio superior */
+}
+
+/* Botón de enlace en las noticias */
+.new_link {
+    width: 157px; /* Ancho del botón */
+    max-width: 157px; /* Ancho máximo */
+    height: 60px; /* Altura del botón */
+    max-height: 60px; /* Altura máxima */
+    font-weight: 400; /* Grosor del texto */
+    font-size: 24px; /* Tamaño del texto */
+    line-height: 32px; /* Altura de línea */
+    text-decoration: none; /* Elimina el subrayado */
+    color: #555555; /* Color del texto */
+}
+
+/* Galería */
+#gallery {
+    position: relative; /* Posiciona la galería en relación a su contenedor */
+    width: 1711px; /* Ancho de la galería */
+    max-width: 1711px; /* Ancho máximo */
+    height: 840px; /* Altura de la galería */
+    max-height: 840px; /* Altura máxima */
+    display: flex; /* Coloca los elementos en fila */
+    margin-left: 209px; /* Espacio a la izquierda */
+    margin-top: 73px; /* Espacio superior */
+}
+
+/* Título de la galería */
+#gallery > div > h1 {
+    width: 351px; /* Ancho del título */
+    max-width: 351px; /* Ancho máximo */
+    height: 61px; /* Altura del título */
+    max-height: 61px; /* Altura máxima */
+    font-weight: 700; /* Grosor del texto */
+    font-size: 50px; /* Tamaño del texto */
+    line-height: 60.51px; /* Altura de línea */
+    color: #2D2D2D; /* Color del texto */
+}
+
+/* Descripción de la galería */
+#gallery > div > p {
+    width: 387px; /* Ancho del texto */
+    max-width: 387px; /* Ancho máximo */
+    height: 96px; /* Altura del texto */
+    max-height: 96px; /* Altura máxima */
+    font-weight: 400; /* Grosor del texto */
+    font-size: 16px; /* Tamaño del texto */
+    line-height: 30px; /* Altura de línea */
+    text-align: justify; /* Justifica el texto */
+    color: #555555; /* Color del texto */
+    margin-top: 19px; /* Espacio superior */
+}
+
+/* Flechas de navegación en la galería */
+#galleryflechas {
+    display: flex; /* Coloca las flechas en fila */
+    margin-top: 26px; /* Espacio superior */
+}
+
+.botones_gallery > button {
+    transition: cursor 3s ease; /* Transición suave para el cursor */
+    width: 40px; /* Ancho del botón */
+    max-width: 40px; /* Ancho máximo */
+    height: 40px; /* Altura del botón */
+    max-height: 40px; /* Altura máxima */
+    border: 1px solid #555555; /* Borde gris */
+    border-radius: 100px; /* Bordes redondeados */
+    display: flex; /* Centra el contenido del botón */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color: transparent; /* Fondo transparente */
+}
+
+.botones_gallery > button:hover {
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Imagen principal de la galería */
+#tiendafinal > img {
+    width: 1140px; /* Ancho de la imagen */
+    max-width: 1140px; /* Ancho máximo */
+    height: 757px; /* Altura de la imagen */
+    margin-top: 17px; /* Espacio superior */
+    margin-left: 184px; /* Espacio a la izquierda */
+}
+
+/* Flecha izquierda de la galería */
+#galleryflechasizqui {
+    opacity: 30%; /* Hace que la flecha sea más transparente */
+    rotate: 180deg; /* Gira la flecha */
+}
+
+/* Flecha derecha de la galería */
+#galleryflechasdere {
+    margin-left: 34px; /* Espacio a la izquierda */
+}
+
+/* Imagen destacada en la galería */
+#casamaderafinal {
+    position: absolute; /* Posiciona la imagen en relación a su contenedor */
+    width: 352px; /* Ancho de la imagen */
+    max-width: 352px; /* Ancho máximo */
+    height: 456px; /* Altura de la imagen */
+    max-height: 456px; /* Altura máxima */
+    margin-left: 301px; /* Espacio a la izquierda */
+    margin-top: 384px; /* Espacio superior */
+}
+
 #noticias {
     margin-top: 48.79px;
     display: flex;
@@ -870,6 +1037,10 @@ main {
     max-width: 473.36px;
     height: 286.41px;
     max-height: 286.41px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
 }
 
 .new p {
@@ -1162,7 +1333,7 @@ footer > div {
     display: flex;
     align-items: center;
     border: 0px;
-    box-shadow: -10 10 20 #2D2D2D0D;
+    box-shadow: -10px 10px 20px #2D2D2D0D;
 }
 
 #formulario {
@@ -1219,17 +1390,6 @@ select {
     text-transform: capitalize;
 }
 
-#accommodation > p {
-    color: #FFFFFF;
-    max-width: 323px;
-    max-height: 32px;
-    margin-top: 156px;
-    margin-left: 60px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 25px;
-}
-
 #formulario button {
     width: 241px;
     height: 50px;
@@ -1246,53 +1406,144 @@ select {
     line-height: 16.94px;
 }
 
+/* Botón del formulario */
+#formulario button:hover {
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Sección del formulario en el footer */
 #formuariofooter {
-    width: 809px;
-    height: 46px;
-    margin-top: 37px;
+    width: 809px; /* Ancho del formulario */
+    height: 46px; /* Altura del formulario */
+    margin-top: 37px; /* Espacio superior */
 }
 
 #formuariofooter div {
-    width: 809px;
-    height: 34px;
-    margin-bottom: 12px;
-    display: flex;
+    width: 809px; /* Ancho del contenedor interno */
+    height: 34px; /* Altura del contenedor interno */
+    margin-bottom: 12px; /* Espacio inferior */
+    display: flex; /* Coloca los elementos en fila */
 }
 
 #formuariofooter input {
-    width: 334.28px;
-    height: 34px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 34px;
-    color: #FFFFFF;
-    background-color: transparent;
-    border: 0px;
-}
-
-#formuariofooter a {
-    width: 190.8px;
-    height: 34px;
-    margin-left: 283.91px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 34px;
-    color: #FFFFFF;
-    text-decoration: none;
-    text-transform: capitalize;
-}
-
-#formuariofooter img {
-    width: 24.42px;
-    height: 16px;
-    margin-left: 50.95px;
+    width: 334.28px; /* Ancho del campo de entrada */
+    height: 34px; /* Altura del campo de entrada */
+    font-weight: 400; /* Grosor del texto */
+    font-size: 20px; /* Tamaño del texto */
+    line-height: 34px; /* Altura de línea */
+    color: #FFFFFF; /* Color del texto */
+    background-color: transparent; /* Fondo transparente */
+    border: 0px; /* Sin bordes */
 }
 
 #formuariofooter input::placeholder {
-    color: #FFFFFF;
-    text-transform: capitalize;
+    color: #FFFFFF; /* Color del texto de marcador de posición */
+    text-transform: capitalize; /* Capitaliza la primera letra de cada palabra */
 }
 
 #formuariofooter input:focus {
-    outline: none;
+    outline: none; /* Elimina el contorno azul predeterminado al hacer clic */
+}
+
+#formuariofooter a {
+    width: 190.8px; /* Ancho del enlace */
+    height: 34px; /* Altura del enlace */
+    margin-left: 283.91px; /* Espacio a la izquierda */
+    font-weight: 400; /* Grosor del texto */
+    font-size: 20px; /* Tamaño del texto */
+    line-height: 34px; /* Altura de línea */
+    color: #FFFFFF; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    text-transform: capitalize; /* Capitaliza la primera letra de cada palabra */
+}
+
+#formuariofooter img {
+    width: 24.42px; /* Ancho de la imagen */
+    height: 16px; /* Altura de la imagen */
+    margin-left: 50.95px; /* Espacio a la izquierda de la imagen */
+}
+
+/* Ajustes generales para el formulario */
+#FORMULARIO {
+    position: absolute; /* Posiciona el formulario en relación a su contenedor */
+    z-index: 2; /* Asegura que esté por encima de otros elementos */
+    width: 1500px; /* Ancho del formulario */
+    height: 125px; /* Altura del formulario */
+    background-color: #FFFFFF; /* Fondo blanco */
+    margin-top: -63px; /* Espacio superior negativo para ajustar la posición */
+    margin-left: 210px; /* Espacio a la izquierda */
+    display: flex; /* Coloca los elementos en fila */
+    align-items: center; /* Alinea los elementos verticalmente */
+    border: 0px; /* Sin bordes */
+    box-shadow: -10px 10px 20px #2D2D2D0D; /* Sombra para darle profundidad */
+}
+
+#formulario {
+    display: flex; /* Coloca los elementos en fila */
+    gap: 25px; /* Espaciado entre los elementos */
+    margin-left: 97px; /* Espacio a la izquierda */
+    margin-top: 30px; /* Espacio superior */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+.contenedor_formulario {
+    width: 242px; /* Ancho del contenedor */
+    height: 61px; /* Altura del contenedor */
+}
+
+.contenedor_formulario img {
+    width: 14px; /* Ancho de la imagen */
+    height: 14px; /* Altura de la imagen */
+}
+
+.contenedor_formulario label {
+    width: 77px; /* Ancho de la etiqueta */
+    height: 19px; /* Altura de la etiqueta */
+    font-weight: 700; /* Grosor del texto */
+    font-size: 16px; /* Tamaño del texto */
+    line-height: 19.36px; /* Altura de línea */
+    margin-left: 6px; /* Espacio a la izquierda */
+    color: #345E40; /* Color del texto */
+}
+
+.contenedor_formulario input,
+select {
+    width: 140px; /* Ancho del campo de entrada o selección */
+    height: 19px; /* Altura del campo */
+    margin-top: 17px; /* Espacio superior */
+    border: 0px; /* Sin bordes */
+    font-weight: 600; /* Grosor del texto */
+    font-size: 16px; /* Tamaño del texto */
+    line-height: 19.36px; /* Altura de línea */
+}
+
+.contenedor_formulario input:focus {
+    outline: none; /* Elimina el contorno azul predeterminado al hacer clic */
+}
+
+.contenedor_formulario hr {
+    width: 242px; /* Ancho de la línea horizontal */
+    margin-top: 6px; /* Espacio superior */
+    border: 1px solid #686868; /* Color del borde */
+}
+
+.contenedor_formulario select {
+    width: 100%; /* Ancho completo del contenedor */
+    text-transform: capitalize; /* Capitaliza la primera letra de cada palabra */
+}
+
+#formulario button {
+    width: 241px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    display: flex; /* Coloca los elementos en fila */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin-top: 9px; /* Espacio superior */
+    background-color: #345E40; /* Fondo verde oscuro */
+    border: 1px solid #345E40; /* Borde del mismo color que el fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    color: #FFFFFF; /* Color del texto */
+    font-weight: 700; /* Grosor del texto */
+    font-size: 14px; /* Tamaño del texto */
+    line-height: 16.94px; /* Altura de línea */
 }
